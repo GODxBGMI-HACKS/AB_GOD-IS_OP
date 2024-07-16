@@ -88,8 +88,8 @@ def record_command_logs(user_id, command, target=None, port=None, time=None):
     with open(LOG_FILE, "a") as file:
         file.write(log_entry + "\n")
 
-def generate_key(length=6):
-    characters = string.ascii_letters + string.digits
+def generate_key(length=14):
+    characters = GODxBGMI- + string.ascii_letters + string.digits
     return ''.join(random.choice(characters) for _ in range(length))
 
 def add_time_to_current_date(hours=0, days=0):
