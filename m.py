@@ -89,8 +89,8 @@ def record_command_logs(user_id, command, target=None, port=None, time=None):
         file.write(log_entry + "\n")
 
 def generate_key(length=14):
-    characters = GODxBGMI- + string.ascii_letters + string.digits
-    return ''.join(random.choice(characters) for _ in range(length))
+    characters = 'GODxBGMI-' + string.ascii_letters + string.digits
+    return ''.join('GODxBGMI-' + random.choice(characters) for _ in range(length))
 
 def add_time_to_current_date(hours=0, days=0):
     return (datetime.datetime.now() + datetime.timedelta(hours=hours, days=days)).strftime('%Y-%m-%d %H:%M:%S')
